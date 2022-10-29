@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .baise {
+        background-color: white;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .yinying {
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div style="width: 200px; z-index: 2" class="baise yinying">
+      <div class="flex">
+      </div>
+    </div>
+    <div class="flex1 biase column">
+      <div style="height: 60px; z-index: 1;" class="baise yinying"></div>
+      <div style="overflow: auto" class="flex1 flex">
+        <div style="flex: 3" class="flex column mg8">
+          <div class="flex">
+            <div style="height: 100px" class="flex1 baise mgr8 yinying"></div>
+            <div style="height: 100px" class="flex1 baise mgr8 yinying"></div>
+            <div style="height: 100px" class="flex1 baise mgr8 yinying"></div>
+            <div style="height: 100px" class="flex1 baise yinying"></div>
+          </div>
+          <div class="flex column">
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 160px" class="baise mgt8 yinying"></div>
+          </div>
+        </div>
+        <div style="flex: 1" class="flex column mgr8 mgt8">
+          <div style="height: 150px" class="baise yinying"></div>
+          <div style="height: 300px" class="baise mgt8 yinying"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
